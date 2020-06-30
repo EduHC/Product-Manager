@@ -39,11 +39,15 @@
     "eslint-plugin-react": "^7.20.0",
     "eslint-plugin-react-hooks": "^2.5.1",
     "jest": "^26.0.1",
+    "logkitty": "0.7.1",
     "metro-react-native-babel-preset": "^0.59.0",
     "prettier": "^2.0.5",
     "react-test-renderer": "16.11.0"
   },
   "jest": {
     "preset": "react-native"
+  },
+  "resolutions": {
+    "logkitty": "0.7.1"
   }
 }

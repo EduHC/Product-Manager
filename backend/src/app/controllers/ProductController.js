@@ -6,7 +6,7 @@ let id = 0;
 class ProductController {
   index(req, res) {
     if (!estoque.length > 0) {
-      return res.json({ message: 'Estoque está vazio' });
+      return res.status(200).json({ message: 'Estoque está vazio' });
     }
 
     return res.status(200).json(estoque);

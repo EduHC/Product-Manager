@@ -66,6 +66,12 @@ function NovoProduto({ navigation }) {
     setPreco('');
   }
 
+  function handleEvent(event) {
+    event.preventDefault();
+    if (event.charCode >= 48 && event.charCode <= 57) return event;
+    return false;
+  }
+
   return (
     <Container>
       <TouchableOpacity
@@ -105,6 +111,7 @@ function NovoProduto({ navigation }) {
             <Input
               placeholder="Insira preço do produto"
               keyboardType="number-pad"
+              onKeyPress={(event) => handleEvent(event)}
               value={newPreco}
               onChangeText={setPreco}
               ref={precoRef}
